@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-parchment: #faf8f2;
+    --bg-card: #ffffff;
+    --border-heritage: #e6dccb;
+    --primary-terracotta: #991b1b;
+    --primary-amber: #d97706;
+    --emerald-accent: #047857;
+  }
+}
+
+.font-heading {
+  font-family: 'Outfit', 'Cinzel', sans-serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+/* Custom 3D Card Flip styling for Heritage Memory Game */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Warm Clean Background */
+.bg-heritage-pattern {
+  background-color: #fbf9f4;
+}
+
+.border-motif {
+  border-image: linear-gradient(to right, #991b1b, #d97706, #047857, #d97706, #991b1b) 1;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1e9d2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b45309;
+}
